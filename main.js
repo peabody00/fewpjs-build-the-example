@@ -2,8 +2,18 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
+const displayError = document.querySelector("#modal");
 
+displayError.className = "hidden";
+
+function toggleDisplayError() {
+  if (displayError.className === "hidden") {
+    displayError.className = "";
+  }
+  else {
+    displayError.className = "hidden";
+  }
+};
 
 
 
